@@ -21,11 +21,11 @@ function submitForm(e) {
     e.preventDefault();
 
     // Get values
-    var name = getInputVal('name');
-    var company = getInputVal('company');
-    var email = getInputVal('email');
-    var phone = getInputVal('phone');
-    var message = getInputVal('message');
+    var name = document.getElementById('name').value;
+    var company = document.getElementById('company').value
+    var email = document.getElementById('email').value
+    var phone = document.getElementById('phone').value
+    var message = document.getElementById('message').value
 
     // Save message
     saveMessage(name, company, email, phone, message);
